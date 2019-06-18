@@ -8,7 +8,7 @@
     position: relative;
     width: 200px;
     transform-style: preserve-3d;
-    animation: spin 5s infinite linear;
+    /* animation: spin 5s infinite linear; */
 }
 .cube .front, .cube .back, .cube .top, .cube .bottom, .cube .right, .cube .left {
     position: absolute;
