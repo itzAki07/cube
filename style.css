@@ -1,0 +1,159 @@
+.wrap {
+    margin-left: 500px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    padding-top: 200px;
+}
+.cube {
+    position: relative;
+    width: 200px;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+}
+.cube .front, .cube .back, .cube .top, .cube .bottom, .cube .right, .cube .left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+ .back {
+     border: 1px solid black;
+    transform: translateZ(-100px) rotateY(180deg);
+}
+.front {
+    border: 1px solid black;
+    transform: translateZ(100px);
+}
+.front1,
+.front2,
+.front3,
+.front4,
+.front5,
+.front6,
+.front7,
+.front8,
+.front9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: red;
+    display: inline-block;
+}
+.back1,
+.back2,
+.back3,
+.back4,
+.back5,
+.back6,
+.back7,
+.back8,
+.back9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: yellow;
+    display: inline-block;
+}
+.top1,
+.top2,
+.top3,
+.top4,
+.top5,
+.top6,
+.top7,
+.top8,
+.top9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: green;
+    display: inline-block;
+}
+.bottom1,
+.bottom2,
+.bottom3,
+.bottom4,
+.bottom5,
+.bottom6,
+.bottom7,
+.bottom8,
+.bottom9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: blue;
+    display: inline-block;
+}
+.left1,
+.left2,
+.left3,
+.left4,
+.left5,
+.left6,
+.left7,
+.left8,
+.left9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: blue;
+    display: inline-block;
+}
+.left1,
+.left2,
+.left3,
+.left4,
+.left5,
+.left6,
+.left7,
+.left8,
+.left9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: orangered;
+    display: inline-block;
+}
+.right1,
+.right2,
+.right3,
+.right4,
+.right5,
+.right6,
+.right7,
+.right8,
+.right9 {
+    width: 64px!important;
+    height: 64px!important;
+    background-color: black;
+    display: inline-block;
+}
+
+
+
+.right {
+    border: 1px solid black;
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+}
+
+.left {
+    border: 1px solid black;
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+}
+
+.top {
+    border: 1px solid black;
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top center;
+}
+
+.bottom {
+    border: 1px solid black;
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
