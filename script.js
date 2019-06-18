@@ -3,8 +3,8 @@
 var cube = document.querySelector('.cube');
 var wrap = document.querySelector('.wrap');
 
-var maxX = garden.clientWidth - ball.clientWidth;
-var maxY = garden.clientHeight - ball.clientHeight;
+var maxX = wrap.clientWidth - ball.clientWidth;
+var maxY = wrap.clientHeight - ball.clientHeight;
 
 function handleOrientation(event) {
     var x = event.beta;  // In degree in the range [-180,180]
